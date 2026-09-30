@@ -1,0 +1,20 @@
+_BASE_: ../base.yaml
+MODEL:
+  MASK_ON: true
+  EADA:
+    # Base-stage mask initialization jointly trains the 60-class detector and
+    # the class-agnostic mask head. Only the mask-head tensors are later merged
+    # into a selected EADA detector. Novel-stage FSIS configs set this to true.
+    FSIS_MASK_ONLY: false
+    FSIS_FEATURE_SOURCE: pre_saia
+DATASETS:
+  EADA_TWO_STREAM: false
+SOLVER:
+  IMS_PER_BATCH: 16
+  BASE_LR: 0.001
+  STEPS: [8000]
+  MAX_ITER: 10000
+  WARMUP_ITERS: 0
+TEST:
+  SPDI_ENABLED: false
+OUTPUT_DIR: outputs/coco_fsis_base_mask

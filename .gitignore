@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.idea/
+.vscode/
+outputs/
+weights/
+datasets/
+checkpoints/
+logs/
+*.pth
+*.pkl
+*.pt
+

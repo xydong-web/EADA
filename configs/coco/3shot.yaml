@@ -1,0 +1,19 @@
+_BASE_: ../Base-EADA.yaml
+MODEL:
+  ROI_HEADS:
+    NUM_CLASSES: 80
+  EADA:
+    SAIA_ALPHA: 0.3
+    ROI_GRADIENT_SCALE: 0.01
+    FREEZE_ROI_FEATURE: true
+DATASETS:
+  TRAIN: [removecoco14_trainval_all_3shot_seed0]
+  BASE_TRAIN: [removecoco14_trainval_all]
+  TEST: [coco14_test_all]
+  EADA_TWO_STREAM: true
+SOLVER:
+  IMS_PER_BATCH: 4
+  BASE_LR: 0.005
+  STEPS: [3600]
+  MAX_ITER: 4000
+OUTPUT_DIR: outputs/coco_3shot_seed0

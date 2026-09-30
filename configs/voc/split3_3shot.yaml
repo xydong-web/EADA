@@ -1,0 +1,20 @@
+_BASE_: ../Base-EADA.yaml
+MODEL:
+  ROI_HEADS:
+    NUM_CLASSES: 20
+  EADA:
+    ROI_PREDICTOR_MODE: residual_frozen
+    SAIA_ALPHA: 0.2
+    ROI_GRADIENT_SCALE: 0.001
+    FREEZE_ROI_FEATURE: true
+DATASETS:
+  TRAIN: [removevoc_2007_trainval_all3_3shot_seed0]
+  BASE_TRAIN: [voc_2007_trainval_base3, voc_2012_trainval_base3]
+  TEST: [voc_2007_test_all3]
+  EADA_TWO_STREAM: true
+SOLVER:
+  IMS_PER_BATCH: 4
+  BASE_LR: 0.0025
+  STEPS: [2000]
+  MAX_ITER: 2400
+OUTPUT_DIR: outputs/voc_split3_3shot_seed0

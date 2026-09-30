@@ -1,0 +1,28 @@
+{
+  "source_commit": "488810812a5255baf4156ef7f1a3bdf5cec17b18",
+  "source": "current working tree; source_commit is a reference, not the complete input snapshot",
+  "copied_and_adapted": [
+    "defrcn/data/builtin.py",
+    "defrcn/data/builtin_meta.py",
+    "defrcn/data/meta_voc.py",
+    "defrcn/data/meta_coco.py",
+    "defrcn/evaluation/pascal_voc_evaluation.py",
+    "defrcn/evaluation/coco_evaluation.py"
+  ],
+  "implementation_basis": [
+    "defrcn/modeling/meta_arch/rcnn.py",
+    "defrcn/modeling/meta_arch/gdl.py",
+    "defrcn/engine/defaults.py",
+    "defrcn/modeling/roi_heads/roi_heads.py",
+    "defrcn/modeling/roi_heads/fast_rcnn.py",
+    "defrcn/modeling/roi_heads/clip_pre_nms.py",
+    "defrcn/modeling/roi_heads/mask_head.py"
+  ],
+  "formal_experiment_drivers": [
+    "voc_component_training",
+    "voc_semantic_evaluation",
+    "coco_detection_training",
+    "coco_detection_evaluation",
+    "coco_instance_segmentation"
+  ]
+}

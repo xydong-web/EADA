@@ -1,0 +1,23 @@
+_BASE_: ../Base-EADA.yaml
+MODEL:
+  ROI_HEADS:
+    NUM_CLASSES: 60
+  EADA:
+    SAIA_ENABLED: false
+    DC_ENABLED: false
+    ROI_PREDICTOR_MODE: residual_trainable
+    ROI_GRADIENT_SCALE: 0.75
+    CLS_DROPOUT: 0.0
+    FREEZE_ROI_FEATURE: false
+DATASETS:
+  TRAIN: [coco14_trainval_base]
+  TEST: [coco14_test_base]
+SOLVER:
+  IMS_PER_BATCH: 16
+  BASE_LR: 0.01
+  STEPS: [170000, 200000]
+  MAX_ITER: 220000
+  WARMUP_ITERS: 1000
+TEST:
+  SPDI_ENABLED: false
+OUTPUT_DIR: outputs/coco_base

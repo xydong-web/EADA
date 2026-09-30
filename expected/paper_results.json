@@ -1,0 +1,571 @@
+{
+  "protocol": {
+    "coco_metrics": [
+      "novel AP",
+      "novel AP50",
+      "novel AP75"
+    ],
+    "main_table_selection": "highest novel AP50 within each split/shot or shot; all metrics in a row come from the same selected run",
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "voc_metric": "novel AP50 for Table 1; joint AP50 for Table 4"
+  },
+  "table1_pascal_voc": {
+    "split1_10shot": {
+      "selected": {
+        "AP50": 77.2149,
+        "bAP50": 78.241,
+        "nAP": 44.5389,
+        "nAP50": 74.1364,
+        "nAP75": 47.3405
+      },
+      "selected_seed": 0
+    },
+    "split1_1shot": {
+      "selected": {
+        "AP50": 75.6046,
+        "bAP50": 78.0501,
+        "nAP": 37.0597,
+        "nAP50": 68.2682,
+        "nAP75": 36.9918
+      },
+      "selected_seed": 0
+    },
+    "split1_2shot": {
+      "selected": {
+        "AP50": 74.926,
+        "bAP50": 77.6337,
+        "nAP": 36.6367,
+        "nAP50": 66.8027,
+        "nAP75": 36.0068
+      },
+      "selected_seed": 0
+    },
+    "split1_3shot": {
+      "selected": {
+        "AP50": 76.2236,
+        "bAP50": 77.9801,
+        "nAP": 40.006,
+        "nAP50": 70.9542,
+        "nAP75": 41.9285
+      },
+      "selected_seed": 0
+    },
+    "split1_5shot": {
+      "selected": {
+        "AP50": 77.2223,
+        "bAP50": 78.3682,
+        "nAP": 42.8047,
+        "nAP50": 73.7848,
+        "nAP75": 44.3074
+      },
+      "selected_seed": 0
+    },
+    "split2_10shot": {
+      "selected": {
+        "AP50": 74.9824,
+        "bAP50": 79.4704,
+        "nAP": 31.7283,
+        "nAP50": 61.5187,
+        "nAP75": 28.8521
+      },
+      "selected_seed": 2
+    },
+    "split2_1shot": {
+      "selected": {
+        "AP50": 72.2519,
+        "bAP50": 79.1108,
+        "nAP": 23.9626,
+        "nAP50": 51.675,
+        "nAP75": 19.6497
+      },
+      "selected_seed": 0
+    },
+    "split2_2shot": {
+      "selected": {
+        "AP50": 73.0029,
+        "bAP50": 79.257,
+        "nAP": 27.0842,
+        "nAP50": 54.2406,
+        "nAP75": 24.7767
+      },
+      "selected_seed": 1
+    },
+    "split2_3shot": {
+      "selected": {
+        "AP50": 74.417,
+        "bAP50": 79.4295,
+        "nAP": 30.4276,
+        "nAP50": 59.3797,
+        "nAP75": 26.7024
+      },
+      "selected_seed": 0
+    },
+    "split2_5shot": {
+      "selected": {
+        "AP50": 74.3144,
+        "bAP50": 79.4683,
+        "nAP": 30.952,
+        "nAP50": 58.8529,
+        "nAP75": 27.5708
+      },
+      "selected_seed": 0
+    },
+    "split3_10shot": {
+      "selected": {
+        "AP50": 76.3038,
+        "bAP50": 79.2499,
+        "nAP": 37.3671,
+        "nAP50": 67.4657,
+        "nAP75": 34.9996
+      },
+      "selected_seed": 2
+    },
+    "split3_1shot": {
+      "selected": {
+        "AP50": 74.0797,
+        "bAP50": 79.0727,
+        "nAP": 31.7918,
+        "nAP50": 59.1007,
+        "nAP75": 29.7987
+      },
+      "selected_seed": 0
+    },
+    "split3_2shot": {
+      "selected": {
+        "AP50": 75.4896,
+        "bAP50": 79.5423,
+        "nAP": 34.5284,
+        "nAP50": 63.3316,
+        "nAP75": 32.0719
+      },
+      "selected_seed": 2
+    },
+    "split3_3shot": {
+      "selected": {
+        "AP50": 75.4034,
+        "bAP50": 79.1596,
+        "nAP": 32.8467,
+        "nAP50": 64.1348,
+        "nAP75": 29.4256
+      },
+      "selected_seed": 2
+    },
+    "split3_5shot": {
+      "selected": {
+        "AP50": 75.6203,
+        "bAP50": 79.1494,
+        "nAP": 36.129,
+        "nAP50": 65.0331,
+        "nAP75": 34.095
+      },
+      "selected_seed": 1
+    }
+  },
+  "table2_ms_coco": {
+    "1": {
+      "selected": {
+        "nAP": 12.6602,
+        "nAP50": 23.1155,
+        "nAP75": 12.0261
+      },
+      "selected_seed": 0
+    },
+    "10": {
+      "selected": {
+        "nAP": 20.9724,
+        "nAP50": 38.351,
+        "nAP75": 20.6448
+      },
+      "selected_seed": 2
+    },
+    "2": {
+      "selected": {
+        "nAP": 14.4515,
+        "nAP50": 27.9957,
+        "nAP75": 12.7567
+      },
+      "selected_seed": 2
+    },
+    "3": {
+      "selected": {
+        "nAP": 16.0407,
+        "nAP50": 30.9069,
+        "nAP75": 14.3887
+      },
+      "selected_seed": 2
+    },
+    "30": {
+      "selected": {
+        "nAP": 23.2515,
+        "nAP50": 42.4987,
+        "nAP75": 22.3512
+      },
+      "selected_seed": 1
+    },
+    "5": {
+      "selected": {
+        "nAP": 18.3524,
+        "nAP50": 34.2222,
+        "nAP75": 17.464
+      },
+      "selected_seed": 2
+    }
+  },
+  "table3_fsis": {
+    "10shot": {
+      "bbox": {
+        "nAP": 20.9724,
+        "nAP50": 38.351,
+        "nAP75": 20.6448
+      },
+      "segm": {
+        "nAP": 15.6339,
+        "nAP50": 31.0091,
+        "nAP75": 14.3117
+      },
+      "selected_seed": 2
+    },
+    "1shot": {
+      "bbox": {
+        "nAP": 12.6602,
+        "nAP50": 23.1155,
+        "nAP75": 12.0261
+      },
+      "segm": {
+        "nAP": 9.5588,
+        "nAP50": 18.511,
+        "nAP75": 8.8073
+      },
+      "selected_seed": 0
+    },
+    "2shot": {
+      "bbox": {
+        "nAP": 14.4515,
+        "nAP50": 27.9957,
+        "nAP75": 12.7567
+      },
+      "segm": {
+        "nAP": 10.6997,
+        "nAP50": 21.5965,
+        "nAP75": 9.4992
+      },
+      "selected_seed": 2
+    },
+    "30shot": {
+      "bbox": {
+        "nAP": 23.2515,
+        "nAP50": 42.4987,
+        "nAP75": 22.3512
+      },
+      "segm": {
+        "nAP": 17.4031,
+        "nAP50": 34.8,
+        "nAP75": 15.6477
+      },
+      "selected_seed": 1
+    },
+    "3shot": {
+      "bbox": {
+        "nAP": 16.0407,
+        "nAP50": 30.9069,
+        "nAP75": 14.3887
+      },
+      "segm": {
+        "nAP": 12.1311,
+        "nAP50": 24.1695,
+        "nAP75": 10.8912
+      },
+      "selected_seed": 2
+    },
+    "5shot": {
+      "bbox": {
+        "nAP": 18.3524,
+        "nAP50": 34.2222,
+        "nAP75": 17.464
+      },
+      "segm": {
+        "nAP": 13.5886,
+        "nAP50": 26.9568,
+        "nAP75": 12.374
+      },
+      "selected_seed": 2
+    }
+  },
+  "table4_generalized_voc": {
+    "split1_10shot": {
+      "AP50": 77.2149,
+      "bAP50": 78.241,
+      "nAP50": 74.1364
+    },
+    "split1_1shot": {
+      "AP50": 75.6046,
+      "bAP50": 78.0501,
+      "nAP50": 68.2682
+    },
+    "split1_2shot": {
+      "AP50": 74.926,
+      "bAP50": 77.6337,
+      "nAP50": 66.8027
+    },
+    "split1_3shot": {
+      "AP50": 76.2236,
+      "bAP50": 77.9801,
+      "nAP50": 70.9542
+    },
+    "split1_5shot": {
+      "AP50": 77.2223,
+      "bAP50": 78.3682,
+      "nAP50": 73.7848
+    },
+    "split2_10shot": {
+      "AP50": 74.9824,
+      "bAP50": 79.4704,
+      "nAP50": 61.5187
+    },
+    "split2_1shot": {
+      "AP50": 72.2519,
+      "bAP50": 79.1108,
+      "nAP50": 51.675
+    },
+    "split2_2shot": {
+      "AP50": 73.0029,
+      "bAP50": 79.257,
+      "nAP50": 54.2406
+    },
+    "split2_3shot": {
+      "AP50": 74.417,
+      "bAP50": 79.4295,
+      "nAP50": 59.3797
+    },
+    "split2_5shot": {
+      "AP50": 74.3144,
+      "bAP50": 79.4683,
+      "nAP50": 58.8529
+    },
+    "split3_10shot": {
+      "AP50": 76.3038,
+      "bAP50": 79.2499,
+      "nAP50": 67.4657
+    },
+    "split3_1shot": {
+      "AP50": 74.0797,
+      "bAP50": 79.0727,
+      "nAP50": 59.1007
+    },
+    "split3_2shot": {
+      "AP50": 75.4896,
+      "bAP50": 79.5423,
+      "nAP50": 63.3316
+    },
+    "split3_3shot": {
+      "AP50": 75.4034,
+      "bAP50": 79.1596,
+      "nAP50": 64.1348
+    },
+    "split3_5shot": {
+      "AP50": 75.6203,
+      "bAP50": 79.1494,
+      "nAP50": 65.0331
+    }
+  },
+  "table5_component_ablation": {
+    "novel_AP50": {
+      "Baseline": [
+        53.24,
+        60.69,
+        66.75
+      ],
+      "DC": [
+        54.81,
+        60.32,
+        68.31
+      ],
+      "DC+SAIA": [
+        54.79,
+        61.58,
+        67.18
+      ],
+      "Full EADA": [
+        67.86,
+        71.05,
+        73.73
+      ],
+      "SAIA": [
+        53.55,
+        60.67,
+        66.39
+      ],
+      "SPDI": [
+        66.54,
+        70.04,
+        73.01
+      ]
+    },
+    "seed": 0,
+    "shots": [
+      1,
+      3,
+      5
+    ],
+    "split": 1
+  },
+  "table6_spdi_design": {
+    "fusion_10shot": {
+      "Absolute-score pre-NMS": {
+        "nAP": 44.48,
+        "nAP50": 74.22,
+        "nAP75": 46.04
+      },
+      "Detector-only": {
+        "nAP": 41.38,
+        "nAP50": 68.55,
+        "nAP75": 42.76
+      },
+      "Normalized pre-NMS": {
+        "nAP": 42.2,
+        "nAP50": 70.05,
+        "nAP75": 43.57
+      }
+    },
+    "placement_1shot": {
+      "Detector-only": {
+        "nAP": 31.42,
+        "nAP50": 54.79,
+        "nAP75": 32.76
+      },
+      "Post-NMS SPDI": {
+        "nAP": 37.21,
+        "nAP50": 67.2,
+        "nAP75": 37.2
+      },
+      "Pre-NMS SPDI": {
+        "nAP": 37.35,
+        "nAP50": 67.86,
+        "nAP75": 37.76
+      }
+    }
+  },
+  "table7_mechanism_diagnostics": {
+    "DC": {
+      "Absent_class_gradient_x1e-3": [
+        1.678,
+        0.0
+      ],
+      "Supported_class_gradient_x1e-3": [
+        7.708,
+        7.876
+      ]
+    },
+    "SAIA": {
+      "Mean_best_IoU": [
+        70.84,
+        70.97
+      ],
+      "Recall@100_IoU0.50": [
+        88.41,
+        88.62
+      ],
+      "Recall@100_IoU0.75": [
+        56.86,
+        57.33
+      ]
+    }
+  },
+  "table8_sensitivity": {
+    "SAIA_alpha": {
+      "novel_AP50": [
+        54.32,
+        55.64,
+        54.69,
+        52.97,
+        52.63
+      ],
+      "values": [
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5
+      ]
+    },
+    "SPDI_lambda_novel": {
+      "novel_AP50": [
+        74.23,
+        74.42,
+        74.22,
+        73.33,
+        71.64,
+        68.55
+      ],
+      "values": [
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9,
+        1.0
+      ]
+    },
+    "SPDI_temperature": {
+      "novel_AP50": [
+        74.26,
+        74.22,
+        73.02,
+        69.11
+      ],
+      "values": [
+        0.005,
+        0.01,
+        0.02,
+        0.05
+      ]
+    },
+    "SPDI_topk": {
+      "novel_AP50": [
+        71.74,
+        73.41,
+        74.22,
+        74.8
+      ],
+      "values": [
+        25,
+        50,
+        100,
+        200
+      ]
+    }
+  },
+  "table9_efficiency_rtx4070ti": {
+    "Baseline": {
+      "FPS": 15.81,
+      "GFLOPs": 192.1,
+      "clip_M": 0.0,
+      "detector_M": 64.7,
+      "infer_GiB": 2.34,
+      "latency_ms": 63.3,
+      "train_GiB": 5.32
+    },
+    "DC+SAIA": {
+      "FPS": 14.68,
+      "GFLOPs": 200.1,
+      "clip_M": 0.0,
+      "detector_M": 68.0,
+      "infer_GiB": 2.36,
+      "latency_ms": 68.1,
+      "train_GiB": 6.0
+    },
+    "Full EADA": {
+      "FPS": 1.24,
+      "GFLOPs": 1886.9,
+      "clip_M": 149.6,
+      "detector_M": 68.0,
+      "infer_GiB": 3.22,
+      "latency_ms": 806.3,
+      "train_GiB": 6.0
+    }
+  }
+}

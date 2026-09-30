@@ -1,0 +1,7 @@
+_BASE_: ../30shot.yaml
+MODEL:
+  MASK_ON: true
+  EADA:
+    FSIS_MASK_ONLY: true
+    FSIS_FEATURE_SOURCE: pre_saia
+OUTPUT_DIR: outputs/coco_fsis_30shot_seed0
